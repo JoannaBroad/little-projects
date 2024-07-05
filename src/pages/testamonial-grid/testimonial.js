@@ -10,6 +10,8 @@ import imageQuote from './testimonials-grid-starter/images/bg-pattern-quotation.
 // the colors for the back ground
 const bgColor = ['bg-violet-700', 'bg-slate-600', 'bg-white', 'bg-gray-900'];
 
+const textColor = ['text-white', 'text-stone-300', 'text-slate-600'];
+
 export const test = [
   {name:"Daniel Clifford" ,
   quote: "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth." ,
@@ -19,7 +21,9 @@ export const test = [
     bgColor: bgColor[0],
     wideCard: true,
     longCard: false,
-    order: 1
+    order: 1,
+    mainColor: textColor[0],
+    quoteColor: textColor[1]
 },
 {
   name:'Jonathan Walters',
@@ -28,7 +32,9 @@ export const test = [
   image: imageJonathan,
   bgColor: bgColor[1],
   wideCard: false,
-  longCard: false
+  longCard: false,
+  mainColor: textColor[0],
+  quoteColor: textColor[1]
 },
 {
   name: "Jeanette Harmon",
@@ -37,7 +43,9 @@ export const test = [
   image: imageJeanette,
   bgColor: bgColor[2],
   wideCard: false,
-  longCard: false
+  longCard: false,
+  mainColor: textColor[2],
+  quoteColor: textColor[2]
 },
 
 {
@@ -47,7 +55,9 @@ export const test = [
   image: imagePatrick,
   bgColor: bgColor[3],
   wideCard: true,
-  longCard: false
+  longCard: false,
+  mainColor: textColor[0],
+  quoteColor: textColor[1]
 },
 {
   name: 'Kira Whittle',
@@ -56,7 +66,8 @@ export const test = [
   image: imageKira,
   bgColor: bgColor[2],
   wideCard: false,
-  longCard: true
-
+  longCard: true,
+  mainColor: textColor[2],
+  quoteColor: textColor[2]
     },
 ]

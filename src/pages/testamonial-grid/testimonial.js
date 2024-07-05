@@ -15,12 +15,16 @@ export const test = [{
       quote: 'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
       quoteImage: imageQuote,
       wideCard: true,
+      longCard: false
+
     },
     {
       name: 'Jeanette',
       image: imageJeanette,
       quote: 'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
       wideCard: false,
+      longCard: false
+
       
     },
     {
@@ -28,18 +32,22 @@ export const test = [{
       image: imageJonathan,
       quote: 'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
       wideCard: false,
-      
+      longCard: false
     },
     {
       name: 'Kira',
       image: imageKira,
       quote: 'It’s hard to overstate our gratification at Sunnyside’s sales team. They delivered, on time and on budget.',
       wideCard: false,
+      longCard: true
+
     },
   {
     name: 'Patrick',
     image: imagePatrick,
     quote: 'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
-    wideCard: false,
+    wideCard: true,
+    longCard: false
+
   }
 ]

@@ -7,7 +7,7 @@ import Image from 'astro/components/Image.astro';
 <Layout title="grid">
 	<div class="grid grid-cols-4 gap-5">
     {test.map((test) => (
-      <div class={`card rounded-lg relative bg-orange-600`}>
+      <div class={`card rounded-lg relative bg-orange-600 ${test.wideCard ? 'col-span-2' : ''}${test.longCard ? 'row-span-2' : ''} ${test.name === 'Kira' ? 'col-start-4 col-end-5 row-start-1 row-end-3' : ''}`}>
         <div
           class={`card-content`}
         >

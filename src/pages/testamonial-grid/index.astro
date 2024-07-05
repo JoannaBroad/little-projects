@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { test } from './testimonial.js';
+import Image from 'astro/components/Image.astro';
+---
+
+<Layout title="grid">
+	<div class="grid grid-cols-4 gap-5">
+    {test.map((test) => (
+      <div class={`card rounded-lg relative bg-orange-600`}>
+        <div
+          class={`card-content`}
+        >
+          <!-- Image and content for the card -->
+          <Image
+            src={test.image}
+            alt={test.name}
+            class="card-image rounded-full border-2 border-violet-400 w-7"
+          />{test.quoteImage && (
+          <Image
+            src={test.quoteImage}
+            alt="Quote marks"
+            class="additional-image absolute right-5 w-28 top-0"
+          />
+        )}
+
+          <h3 class="font-medium text-sm">{test.name}</h3>
+          <h4 class=" opacity-50 text-xs font-medium">Verified Graduate</h4>
+          <h2 class=" text-xl font-semibold">{test.quote}</h2>
+        </div>
+      </div>    ))}
+  </div>
+  
+
+</Layout>

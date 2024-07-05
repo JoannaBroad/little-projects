@@ -6,13 +6,13 @@ import Image from 'astro/components/Image.astro';
 
 <Layout title="grid">
 	<main
-		class="flex flex-col justify-center items-center w-11/12 m-auto font-['Barlow Semi Condensed']"
+		class="flex flex-col justify-center items-center w-11/12 md:w-4/5 m-auto font-['Barlow Semi Condensed'] p-5"
 	>
-		<div class="grid md:grid-cols-4 gap-2">
+		<div class="grid md:grid-cols-4 gap-5">
 			{
 				test.map((test) => (
 					<div
-						class={`card rounded-lg relative ${test.bgColor} ${test.wideCard ? 'md:col-span-2' : ''}${test.longCard ? 'md:row-span-2' : ''} ${test.name === 'Kira Whittle' ? 'md:col-start-4 md:col-end-5 md:row-start-1 md:row-end-3' : ''} p-5`}
+						class={`card rounded-lg relative ${test.bgColor} ${test.wideCard ? 'md:col-span-2' : ''}${test.longCard ? 'md:row-span-2' : ''} ${test.name === 'Kira Whittle' ? 'md:col-start-4 md:col-end-5 md:row-start-1 md:row-end-3' : ''} p-5 shadow`}
 					>
 						<div class="card-content flex gap-5 items-center">
 							<div class="grid grid-flow-col">
@@ -38,7 +38,7 @@ import Image from 'astro/components/Image.astro';
 						</div>
 
 						<h2
-							class={` text-xl font-semibold pt-5 relative z-10 ${test.mainColor} `}
+							class={` text-xl font-semibold pt-2 relative z-10 ${test.mainColor} `}
 						>
 							{test.quote}
 						</h2>
